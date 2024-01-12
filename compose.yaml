@@ -1,0 +1,26 @@
+version: "3.3"
+
+# LFE Quickstart - 1.2.2 Using Docker:
+# https://lfe.gitbooks.io/quick-start/content/1.html#122-using-docker
+
+services:
+
+  lfe:
+
+    image: lfex/lfe@sha256:2bc01c0317cf355eef56363a625d8eb8189ad3417ee2ec2c0ee81db4e9b7c871
+    # The above uses the SHA256 hash of 'latest' from June 27 2023
+    # https://hub.docker.com/r/lfex/lfe
+    # The Alpine image is considered the   
+    # canonical one with the most recent 
+    #release of LFE and Erlang.
+
+    volumes:
+      - ./app:/opt/erlang/lfe/app
+      # /opt/erlang/lfe is the LFE directtory 
+      # in the container. Mounting our ./app
+      # directory to /opt/erlang/lfe/app
+
+    tty: true
+    stdin_open: true
+    
+networks: {}

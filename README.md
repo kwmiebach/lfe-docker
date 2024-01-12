@@ -36,7 +36,7 @@ ok
 To compile and try out the included sample module:
 
 ```lisp
-> (c "sample-module.lfe")
+> (c "app/sample-module.lfe")
 > (sample-module:my-sum 1 6)
 42
 > (sample-module:my-sum 1 60)

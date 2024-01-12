@@ -15,7 +15,7 @@ docker compose up -d
 
 ## Usage
 
-Make sure the docker stack is running, see #Installation.
+Make sure the docker stack is running, see [Installation](#installation).
 
 You can now start a REPL in the lfe container with:
 
